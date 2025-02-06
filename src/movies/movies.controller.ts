@@ -36,7 +36,7 @@ export class MoviesController {
 
   @Delete(':id')
   remove(@Param('id') movieId: number) {
-    this.MovieService.delete(movieId);
+    this.MovieService.deleteOne(movieId);
     return movieId;
   }
 
